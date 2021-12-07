@@ -1,2 +1,24 @@
 /* Don't forget that media queries are required for this project */
-@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Noto+Sans+SC&family=Noto+Sans+TC&family=Noto+Serif+TC:wght@200&family=Road+Rage&family=Roboto+Mono:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+
+.stack {
+    flex-direction: column;
+    opacity: 100%;
+}
+ul {
+display: flex;
+justify-content: space-around;
+font-size: 42px;
+list-style: none;
+}
+ul li {
+font-family: 'NTR', sans-serif;
+    color: red; 
+}
+
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+background-color: black;
+opacity: 0.65;
+}
