@@ -1,10 +1,18 @@
 /* Don't forget that media queries are required for this project */
 @import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
 
-.stack {
-    flex-direction: column;
-    opacity: 100%;
+
+header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+.stack {
+    
+}
+
+/* Unordered list for the nav bar */
 ul {
 display: flex;
 font-size: 40px;
@@ -12,12 +20,19 @@ list-style: none;
 }
 
 ul li {
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul a {
     font-family: 'NTR', sans-serif;
     color: #e6777a;
     padding: 30px 25px 32px 36px;   
     margin: auto 0;
     display: flex;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 ul {
@@ -26,14 +41,17 @@ ul {
     padding: 0;
     padding-right: 5%;
     }
+/* Unorder list for the nav bar the end */
 
 .flex-container {
-background-image: url(https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-after/Landscape-BW.jpg);
-background-repeat: no-repeat;
-display:flex;
+display: flex;
 flex-wrap: wrap;
-background-color: black;
-justify-content: space-between;
+justify-content: space-between; 
+background: linear-gradient(
+    rgba(0,0,0, 0.5),
+    rgba(0,0,0, 0.5));
+    position: relative;
+    z-index: 10;
 }
 
 .logo {
@@ -44,25 +62,72 @@ opacity: 100%;
 /* Index Information Page */
     
 .Home-information {
-    background-color: red;
+    background-color: grey;
+    border-radius: 20px;
+    width: 80%;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 58px;
+    font-family: 'Roboto', sans-serif;
+    height: 300px;
 }
 
+.Home-information h2 {
+text-align: center;
+font-size: 42px;
+}
+
+p {
+    text-align: left;
+}
 .index-about {
     display: flex;
     justify-content: space-around;
     background-color: red;
 }
 
+.index-about-text h2 {
+    text-align: center;
+}
+
 .index-about-text {
-background-color: black;
-color:white;
-width: 400px;
+background-color: rgba(122, 122, 122, 0.555);
+width: 800px;
+height: 400px;
 border-radius: 20px;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+}
+
+/* End of Index Information Page */
+
+/* Destinations CSS Page Start */
+.destination-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.destination-cards p {
+    background-color:grey;
+    font-family: 'Roboto', sans-serif;
+}
+/* Destinations CSS Page End */
+li:hover {
+    background-color: rgb(226, 23, 226);
+    transition: background-color 0.75s;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 /* Hero Image */
-.hero-image {
 
+.hero-section2 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/Home-Hero-Image-TriAsia.jpg);
+    height: 40vh;
+    background-position: 0 630px;
 }
 
 footer {
@@ -70,8 +135,53 @@ footer {
     align-items: center;
     border-radius: 20px;
     font-size: 30px;
+    font-family: 'NTR', sans-serif;
     border: 20px solid blue;
     height:200px;
     color: white;
     background-color: black;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    background: rgb(214, 58, 31);
+    font-family: 'Noto Serif TC', serif;
+}
+
+header nav ul li a {
+    font-size: 29px;
+    padding: 3em;
+    background: rgb(223, 15, 223);
+    display: block;
+    text-decoration: firebrick;
+    text-transform: uppercase;
+    transition: color ease 200ms, background ease 200ms;
+}
+
+header nav ul li a.active {
+ color: rgb(129, 0, 250);
+}
+header nav ul li a:hover {
+    background: rgb (37,130,223);
+    color: rgb(0, 255, 106);
+}
+
+
+#footer-nav {
+    list-style: none;
+    padding: 2px;
+    font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Serif TC', serif;
+ font-size: 3rem;
+ margin-top: 1em;
+ margin-bottom:  0.5em;
 }
