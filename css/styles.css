@@ -7,18 +7,71 @@
 }
 ul {
 display: flex;
-justify-content: space-around;
-font-size: 42px;
+font-size: 40px;
 list-style: none;
 }
+
 ul li {
-font-family: 'NTR', sans-serif;
-    color: red; 
+    font-family: 'NTR', sans-serif;
+    color: #e6777a;
+    padding: 30px 25px 32px 36px;   
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 5%;
+    }
+
 .flex-container {
-display: flex;
+background-image: url(https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-after/Landscape-BW.jpg);
+background-repeat: no-repeat;
+display:flex;
 flex-wrap: wrap;
 background-color: black;
-opacity: 0.65;
+justify-content: space-between;
+}
+
+.logo {
+opacity: 100%;
+}
+/* End of the header/navigation bar */
+
+/* Index Information Page */
+    
+.Home-information {
+    background-color: red;
+}
+
+.index-about {
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+}
+
+.index-about-text {
+background-color: black;
+color:white;
+width: 400px;
+border-radius: 20px;
+}
+
+/* Hero Image */
+.hero-image {
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 30px;
+    border: 20px solid blue;
+    height:200px;
+    color: white;
+    background-color: black;
 }
