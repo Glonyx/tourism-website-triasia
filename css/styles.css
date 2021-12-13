@@ -59,6 +59,7 @@ opacity: 100%;
 /*Specific menu bar*/
 .active, menu-bar {
     background: blue;
+    color: #EBDEFA;
     border-radius: 3px;
 
 }
@@ -68,8 +69,7 @@ opacity: 100%;
 /* Index Information Page */
     
 .Home-information {
-    background-color: grey;
-    border-radius: 20px;
+    color: #644D7E;
     width: 80%;
     font-size: 30px;
     margin-left: auto;
@@ -86,45 +86,52 @@ font-size: 42px;
 
 p {
     font-family: 'NTR', sans-serif;
-    text-align: left;
+    line-height: 10px;
 }
 
 hr {
     font-family: 'NTR', sans-serif;
 }
 .index-about {
+    color: #644D7E;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(209, 42, 120);
+
 }
 
-.index-about-text h2 {
+.index-about-text h2, p {
+    line-height: 25px;
+    color: #644D7E;
     text-align: left;
 }
 
 .index-about-text {
-background-color: rgba(122, 122, 122, 0.555);
 width: 800px;
 height: 400px;
 font-family: 'Roboto', sans-serif;
 font-size: 20px;
 }
 
+.about-img {
+    margin-top: 20px;
+}
 /* End of Index Information Page */
 
 /* Destinations CSS Page Start */
 .destination-cards {
-    display:flex;
-    align-content: center;
-    justify-content: space-around;
     margin-top: 50px;
+    background-color: #9B75C7;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .destination-cards p {
     background-color:grey;
     font-family: 'Roboto', sans-serif;
     margin-top: 0;
-    height: 500px;
 }
 
 .destinations-about-text {
@@ -135,37 +142,114 @@ font-size: 20px;
 .destinations-about-text p{
     font-size: 27px;
     font-family: 'NTR', sans-serif;
-    margin-left:auto;
-    margin-right:auto;
 }
 /* Destinations CSS Page End */
 
 /* Philippines, Lebanon, Taiwan(Republic of China) CSS */
-.top-information-all-destination-pages {
+
+/* Top Information Start */
+.top-information-all-about-pages {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
     margin-top: 21px;
 }
-.top-information-all-destination-pages p{
-    font-size: 35px;
+.top-information-all-about-pages p{
+    font-size: 20px;
+    color: #644D7E;
 }
-.top-information-all-destination-pages h2{
+.top-information-all-about-pages h2{
     text-align: center;
+    color: #644D7E;
 }
-.top-information-all-destination-pages article {
+.top-information-all-about-pages article {
     width: 738px;
-    background-color: #9B75C7;
     border-radius: 20px;
 }
-.middle-information-all-destination-pages {
+/* Top Information End */
+
+/* Middle Information Start */
+.middle-information-all-about-pages {
     background-color: #9B75C7;
-    font-size:40px;
+    font-size: 20px;
+
 }
 
-.middle-information-all-destination-pages h2{
-    text-align: center;
+.middle-information-all-about-pages p{
+    color: black;
 }
+
+.middle-information-all-about-pages2 h2{
+    background-color: #9B75C7;
+    margin-left: auto;
+    margin-right: auto;
+    width: 894px;
+    border-radius: 10px;
+}
+
+.middle-information-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+[class^="box"] {
+    text-shadow: 5px 2px 7px rgb(0 0 0 / 40%);
+    padding: 10px;
+    position: bottom;
+    height: 55vh;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    overflow: auto;
+    border-radius: 5pt;
+}
+
+.box1 {
+ width: 23%;
+ height: ;
+ object-fit: cover;
+ object-position: ;
+}
+
+.box2 {
+
+}
+
+.box3 {
+
+}
+/* Middle Information End */
+
+/* Bottom Information Start */
+.bottom-information-all-about-pages h2 {
+    text-align: center;
+    background-color: #9B75C7;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1344px;
+    border-radius: 10px;
+}
+.bottom-information-all-about-pages article{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.bottom-information-all-about-pages img{
+    margin-top: 50px;
+    border-radius: 20px;
+}
+/* Activites Page for all of the countries! Start */
+.popular-activities-all-pages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.popular-activities-all-pages img:hover{
+}
+/* Activites Page for all of the countries! End */
+
 /* Philippines, Lebanon, Taiwan(Republic of China) CSS End */
 li:hover {
     background-color: rgb(226, 23, 226);
@@ -176,12 +260,6 @@ li:hover {
 
 a {
     position: relative;
-    color: #ffff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: black;
 }
 
 a::before {
@@ -229,7 +307,7 @@ header nav ul li a {
 }
 
 footer {
-    background-color: #9B75C7;
+    background-color: #272a2b;
     text-align: left;
     text-shadow:4px 4px 0 rgba(0,0,0,0.1);
     font-family: 'NTR', sans-serif;
@@ -243,6 +321,7 @@ footer {
 }
 
 .footer-1 a {
+    
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -258,4 +337,54 @@ h6 {
  font-size: 3rem;
  margin-top: 1em;
  margin-bottom:  0.5em;
+}
+
+.dropdown1 {
+    display: inline-block;
+    font-size: 40px;
+}
+
+.sub-menu-content {
+    display: none;
+    background: #EBDEFA;
+    position: fixed;
+    z-index: 1;
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+}
+
+.dropdown1:hover .sub-menu-content {
+    display: block;
+}
+    
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+body {
+    background: white;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Noto Serif Tc' serif;
+}
+
+}.cards artile, .card{
+    box-shadow: #644D7E;
+    border: solid 1px white;
+    background-color: r#e6777a;
+    border-radius: 5rem 1 2rem;
+}
+.thirds article{
+    width: 55%;
+}
+
+* {
+    box-sizing:boderbox;
+}
+article {
+    display: block;
 }
