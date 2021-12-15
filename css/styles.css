@@ -25,7 +25,7 @@ ul li {
 ul a {
     font-family: 'NTR', sans-serif;
     color: #e6777a;
-    line-height: 1px;
+    line-height: 10px;
     padding: 25px 25px 32px 36px;   
     margin: auto 0;
     display: flex;
@@ -35,9 +35,8 @@ ul a {
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 100px;
     padding: 0;
-    padding-right: 5%;
     }
 /* Unorder list for the nav bar the end */
 
@@ -58,10 +57,8 @@ opacity: 100%;
 
 /*Specific menu bar*/
 .active, menu-bar {
-    background: blue;
-    color: #EBDEFA;
-    border-radius: 3px;
-
+    color: #C393FA;
+    border-radius: 20px;
 }
 
 /* End of the header/navigation bar */
@@ -106,34 +103,21 @@ hr {
 }
 
 .index-about-text {
-width: 800px;
-height: 400px;
-font-family: 'Roboto', sans-serif;
-font-size: 20px;
+    width: 800px;
+    height: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-img {
     margin-top: 20px;
+    box-shadow: 8px 12px 8px rgb(0 0 0 / 30%);
 }
 /* End of Index Information Page */
 
 /* Destinations CSS Page Start */
-.destination-cards {
-    margin-top: 50px;
-    background-color: #9B75C7;
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.destination-cards p {
-    background-color:grey;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 0;
-}
-
 .destinations-about-text {
     background-color: #9B75C7;
     font-family: 'NTR', sans-serif;
@@ -141,13 +125,57 @@ font-size: 20px;
 
 .destinations-about-text p{
     font-size: 27px;
-    font-family: 'NTR', sans-serif;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
 }
 /* Destinations CSS Page End */
 
 /* Philippines, Lebanon, Taiwan(Republic of China) CSS */
 
 /* Top Information Start */
+
+.img-div {
+    height: 700px;
+    width: 700px;
+    overflow: hidden;
+    box-shadow: 8px 12px 8px rgb(0 0 0 / 30%);
+    object-fit: cover;
+}
+
+.img-div1 {
+    height: 700px; 
+    width: 550px; 
+    overflow: hidden;
+    box-shadow: 8px 12px 8px rgb(0 0 0 / 30%);
+    object-fit: cover;
+}
+
+.img-div2 {
+    height: 700px; 
+    width: 550px; 
+    overflow: hidden;
+    box-shadow: 8px 12px 8px rgb(0 0 0 / 30%);
+    object-fit: cover;
+}
+
+.img-div3 {
+    height: 700px; 
+    width: 550px; 
+    overflow: hidden;
+    box-shadow: 8px 12px 8px rgb(0 0 0 / 30%);
+    object-fit: cover;
+}
+
+.main-img {
+    box-shadow: 8px 12px 8px rgb(0 0 0 / 30%);
+    object-position: 75px, 75px;
+    object-fit: cover;
+    
+}
+
 .top-information-all-about-pages {
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +192,7 @@ font-size: 20px;
 }
 .top-information-all-about-pages article {
     width: 738px;
-    border-radius: 20px;
+
 }
 /* Top Information End */
 
@@ -184,7 +212,6 @@ font-size: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 894px;
-    border-radius: 10px;
 }
 
 .middle-information-flex{
@@ -197,20 +224,18 @@ font-size: 20px;
 [class^="box"] {
     text-shadow: 5px 2px 7px rgb(0 0 0 / 40%);
     padding: 10px;
-    position: bottom;
+    position: relative;
     height: 55vh;
     text-decoration: none;
     margin-top: 5px;
     margin-bottom: 10px;
     overflow: auto;
-    border-radius: 5pt;
 }
 
 .box1 {
  width: 23%;
- height: ;
  object-fit: cover;
- object-position: ;
+ object-position: 75px, 75px;
 }
 
 .box2 {
@@ -233,18 +258,19 @@ font-size: 20px;
 }
 .bottom-information-all-about-pages article{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .bottom-information-all-about-pages img{
     margin-top: 50px;
-    border-radius: 20px;
+
 }
 /* Activites Page for all of the countries! Start */
 .popular-activities-all-pages {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-top: 21px;
 }
 .popular-activities-all-pages img:hover{
 }
@@ -252,7 +278,6 @@ font-size: 20px;
 
 /* Philippines, Lebanon, Taiwan(Republic of China) CSS End */
 li:hover {
-    background-color: rgb(226, 23, 226);
     transition: background-color 0.75s;
     cursor: pointer;
     border-radius: 20px;
@@ -272,11 +297,11 @@ a::before {
     left: 0;
     background-color: whitesmoke;
     transform: scaleX(0);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 a:hover::before {
-    transform: scaleX(1);
+    transform: scaleX(0.80);
 }
 /* Hero Image */
 
@@ -286,6 +311,49 @@ a:hover::before {
     background-image: url(../img/Home-Hero-Image-TriAsia.jpg);
     height: 40vh;
     background-position: 0 630px;
+}
+
+.hero-section3 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/destinations-heroimage.jpg);
+    height: 40vh;
+    background-position: 0 630px;
+}
+
+.hero-section4 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/about-philippines-heroimage.jpeg);
+    height: 40vh;
+    background-position: 0 950px;
+}
+
+.hero-section5 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/about-lebanon-heroimage.jpg);
+    height: 40vh;
+    background-position: 0 450px;
+    background-size: cover;
+}
+
+.hero-section6 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/about-taiwan-heroimage.jpg);
+    height: 40vh;
+    background-position: 0 650px;
+    background-size: cover;
+}
+
+.hero-section7 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/discover-philippines-heroimage.jpeg);
+    height: 40vh;
+    background-position: 0 650px;
+    background-size: cover;
 }
 
 
@@ -299,7 +367,7 @@ header nav ul {
 header nav ul li a {
     font-size: 29px;
     padding: 3em;
-    background: rgb(223, 15, 223);
+    background: rgb(0, 255, 149);
     display: block;
     text-decoration: firebrick;
     text-transform: uppercase;
@@ -339,21 +407,22 @@ h6 {
  margin-bottom:  0.5em;
 }
 
-.dropdown1 {
+.dropdown {
     display: inline-block;
-    font-size: 40px;
 }
 
 .sub-menu-content {
     display: none;
-    background: #EBDEFA;
+    background: #644D7E;
     position: fixed;
     z-index: 1;
     font-size: 15px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+    margin: auto 0;
+    width: 10%;
 }
 
-.dropdown1:hover .sub-menu-content {
+.dropdown:hover .sub-menu-content {
     display: block;
 }
     
@@ -365,6 +434,15 @@ p {
     margin-inline-end: 0px;
 }
 
+.taiwan-info {
+    overflow-y: scroll;
+    max-height: 700px;
+}
+.lebanon-info {
+    overflow-y: scroll;
+    max-height: 700px;
+}
+
 body {
     background: white;
     margin: 0;
@@ -372,19 +450,125 @@ body {
     font-family: 'Noto Serif Tc' serif;
 }
 
-}.cards artile, .card{
-    box-shadow: #644D7E;
-    border: solid 1px white;
-    background-color: r#e6777a;
-    border-radius: 5rem 1 2rem;
+/*  Desktop > ~992px wide
+    Large Tablet &lt; ~992px wide
+    Medium Tablet &lt; ~768px wide
+    Phone &lt; ~480px wide */
+
+/* Large tablet Media */
+@media screen and (max-width: 992px){
+    body {
+        background-color: red;
+    }
+/* Navigation */
+    ul {
+        font-size: 30px;
+        }
+        
+    ul {
+        list-style-type: none;
+        margin: 0 100px;
+        padding: 0;
+        }
+
+    .about-img {
+        width: 586px;
+        height: 310px;
+    }
+    .sub-menu-content {
+        display: none;
+        background: #644D7E;
+        position: fixed;
+        z-index: 1;
+        font-size: 15px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+        margin: auto 0;
+        width: 15%;
+    }
+/* Navigation End */
+
+/* Footer */
+footer a {
+    font-size: 20px;
+    text-align: center;
 }
-.thirds article{
-    width: 55%;
+/* Footer End */
+
+/* Home */
+.index-about p {
+    font-size: 15px;
+}
+.index-about h2 {
+    font-size: 40px;
+}
+/* Home End */
+
+/* Destinations */
+.top-information-all-about-pages p{
+    height: 300px;
+    font-size: 15px;
+}
+.top-information-all-about-pages h2{
+    text-align: center;
+    color: #644D7E;
+}
+.top-information-all-about-pages article {
+    width: 50%;
+}
+.main-img {
+    width: 500px;
+    height: 500px;
 }
 
-* {
-    box-sizing:boderbox;
+/* Destinations End */
+
+.img-div1 {
+    flex-basis: 33%;
 }
-article {
-    display: block;
+
+.img-div2 {
+    flex-basis: 33%; 
 }
+
+.img-div3 {
+    flex-basis: 33%; 
+}
+
+.middle-information-all-about-pages p {
+    font-size: 30px;
+}
+
+.bottom-information-all-about-pages h2{
+    font-size: 30px;
+    width: 500px;
+}
+.bottom-information-all-about-pages img {
+    width: 50%;
+}
+.gradient-background {
+    background: linear-gradient (180deg), rgba (34,34,34,.2) 0, 
+    rgba(34,34,34,.15) 50%;
+}
+.relative {
+    position: relative;
+}
+.row {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* Large tablet Media */
+
+/* @media screen and (max-width: 768) and (min-width: 993px) {
+    body{
+        background-color: aquamarine;
+    }
+} */
