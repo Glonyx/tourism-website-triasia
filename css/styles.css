@@ -130,7 +130,26 @@ hr {
 .buttons {
     display: flex;
     justify-content: space-between;
+    text-decoration: none;
+    font-style: bold;
 }
+
+.button-effect {
+    cursor: pointer;
+	font-weight: bold;
+	color: black;
+	background: #EBDEFA;
+	box-shadow: 5px 5px 0 #F08C7D,
+		-5px -5px 0 #F08C7D,
+		-5px 5px 0 #F08C7D,
+		5px -5px 0 #F08C7D;
+	transition: 500ms ease-in-out;
+}
+
+.button-effect:hover {
+    box-shadow: 20px 5px 0 #644D7E, -20px -5px 0 #644D7E;
+}
+
 /* Destinations CSS Page End */
 
 /* Philippines, Lebanon, Taiwan(Republic of China) CSS */
@@ -232,19 +251,6 @@ hr {
     overflow: auto;
 }
 
-.box1 {
- width: 23%;
- object-fit: cover;
- object-position: 75px, 75px;
-}
-
-.box2 {
-
-}
-
-.box3 {
-
-}
 /* Middle Information End */
 
 /* Bottom Information Start */
