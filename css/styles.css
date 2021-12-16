@@ -374,6 +374,15 @@ a:hover::before {
     background-size: cover;
 }
 
+.hero-section10 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/visit-taiwan-heroimage.jpg);
+    height: 40vh;
+    background-position: 0 1000px;
+    background-size: cover;
+}
+
 header nav ul {
     display: flex;
     justify-content: space-around;
