@@ -356,6 +356,23 @@ a:hover::before {
     background-size: cover;
 }
 
+.hero-section8 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/discover-taiwan-heroimage.jpg);
+    height: 40vh;
+    background-position: 0 700px;
+    background-size: cover;
+}
+
+.hero-section9 {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/discover-lebanon-heroimage.jpeg);
+    height: 40vh;
+    background-position: 0 700px;
+    background-size: cover;
+}
 
 header nav ul {
     display: flex;
@@ -438,6 +455,12 @@ p {
     overflow-y: scroll;
     max-height: 700px;
 }
+
+.TWdiscover-information-content {
+    overflow-y: scroll;
+    height: 380px;
+}
+
 .lebanon-info {
     overflow-y: scroll;
     max-height: 700px;
