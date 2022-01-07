@@ -1,7 +1,6 @@
 /* Don't forget that media queries are required for this project */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=NTR&display=swap');
 
-
 header {
     overflow: hidden;
     position: fixed;
@@ -650,9 +649,10 @@ footer a {
     font-size: 30px;
 }
 
-.about-img {
+/* .about-img {
     width: 100px;
-}
+} */
+
 /* Home End */
 
 /* Destinations */  
@@ -719,6 +719,7 @@ footer a {
     ul {
         font-size: 20px;
         }
+
     ul a {
         padding: 15px 5px 22px ; 
     }
@@ -726,6 +727,7 @@ footer a {
     .about-img {
         width: 486px;
         height: 210px;
+
     }
     .sub-menu-content {
         display: none;
