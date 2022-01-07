@@ -167,6 +167,11 @@ hr {
     box-shadow: 20px 5px 0 #644D7E, -20px -5px 0 #644D7E;
 }
 
+.paragraph-countries {
+    overflow: hidden;
+    cursor: not-allowed;
+}
+
 /* Destinations CSS Page End */
 
 /* Philippines, Lebanon, Taiwan(Republic of China) CSS */
@@ -293,8 +298,9 @@ hr {
     justify-content:space-evenly;
     margin-top: 21px;
 }
-.popular-activities-all-pages img:hover{
-}
+/*.popular-activities-all-pages img:hover{
+    
+}*/
 /* Activites Page for all of the countries! End */
 
 /* Philippines, Lebanon, Taiwan(Republic of China) CSS End */
@@ -592,9 +598,9 @@ footer a {
 /* Large tablet Media End*/
 
 /* Medium Tablet */
-@media screen and (min-width: 100px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     body {
-        
+        background: rgb(0, 255, 157);
     }
 /* Navigation */
     ul {
@@ -623,6 +629,9 @@ footer a {
         height: 100px;
     }
     
+    .index-about-text {
+        margin-left: 15px ;
+    }
 /* Navigation End */
 
 /* Footer */
@@ -633,11 +642,16 @@ footer a {
 /* Footer End */
 
 /* Home */
+
 .index-about p {
     font-size: 15px;
 }
 .index-about h2 {
     font-size: 30px;
+}
+
+.about-img {
+    width: 100px;
 }
 /* Home End */
 
@@ -699,8 +713,8 @@ footer a {
 }
 /* Medium Tablet End */
 
-/* Phone Start */
-@media screen and (min-width: 480px) and (max-width: 600px) {
+/* Mobile Start */
+@media screen and (min-width: 321px) and (max-width: 480px) {
 /* Navigation */
     ul {
         font-size: 20px;
@@ -744,6 +758,7 @@ footer a {
 .index-about h2 {
     font-size: 30px;
 }
+
 /* Home End */
 
 /* Destinations */  
@@ -804,4 +819,5 @@ footer a {
     position: relative;
 }
 }
-/* Phone End */
+}
+/* End of phone screen */
