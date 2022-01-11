@@ -598,9 +598,9 @@ footer a {
 
 /* Medium Tablet */
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    body {
+    /* body {
         background: rgb(0, 255, 157);
-    }
+    } */
 /* Navigation */
     ul {
         font-size: 20px;
@@ -632,6 +632,8 @@ footer a {
         margin-left: 15px ;
     }
 /* Navigation End */
+
+/* sideNav */
 
 /* Footer */
 footer a {
@@ -715,6 +717,54 @@ footer a {
 
 /* Mobile Start */
 @media screen and (min-width: 321px) and (max-width: 480px) {
+    /* Image Headers */
+    .hero-section2 {
+        background-image: url(../img/Home-Hero-Image-TriAsia.jpg);
+        zoom: 50%;
+    }
+    
+    .hero-section3 {
+        background-image: url(../img/destinations-heroimage.jpg);
+        background-position: 0 950px;
+        zoom: 80%;
+    }
+    
+    .hero-section4 {
+        background-image: url(../img/about-philippines-heroimage.jpeg);
+        background-position: -500px;
+    }
+    
+    .hero-section5 {
+        background-image: url(../img/about-lebanon-heroimage.jpg);
+        background-position: 0px;
+    }
+    
+    .hero-section6 {
+        background-image: url(../img/about-taiwan-heroimage.jpg);
+        background-position: 0px;
+    }
+    
+    .hero-section7 {
+        background-image: url(../img/discover-philippines-heroimage.jpeg);
+        background-position: -50px;
+    }
+    
+    .hero-section8 {
+        background-image: url(../img/discover-taiwan-heroimage.jpg);
+        background-position: 0px;
+    }
+    
+    .hero-section9 {
+        background-image: url(../img/discover-lebanon-heroimage.jpeg);
+        background-position: 0px;
+    }
+    
+    .hero-section10 {
+        background-image: url(../img/visit-taiwan-heroimage.jpg);
+        background-position: 0px;
+
+    }
+    /* Image Header End */
 /* Navigation */
     ul {
         font-size: 20px;
@@ -749,12 +799,18 @@ footer a {
 
 /* Footer */
 footer a {
-    font-size: 20x;
     text-align: center;
+}
+.footerlink, .footersrc {
+    font-size: 15px
 }
 /* Footer End */
 
 /* Home */
+.about-img {
+    width: 190px;
+    height: 200px;
+}
 .index-about p {
     font-size: 14px;
 }
@@ -779,7 +835,7 @@ footer a {
     width: 50%;
 }
 .main-img {
-    width: 500px;
+    width: 400px;
     height: 500px;
 }
 
@@ -808,12 +864,13 @@ footer a {
 
 .bottom-information-all-about-pages h2{
     font-size: 30px;
-    width: 500px;
+    width: 400px;
 }
 .bottom-information-all-about-pages img {
     flex-basis: 50%;
     width:400px
 }
+
 .gradient-background {
     background: linear-gradient (180deg), rgba (34,34,34,.2) 0, 
     rgba(34,34,34,.15) 50%;
